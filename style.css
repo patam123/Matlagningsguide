@@ -1,4 +1,10 @@
-ul {
+
+body{
+      padding-left:40px;
+      padding-right:40px;
+      height: 700px;
+}
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,11 +12,11 @@ ul {
     background-color: #333;
   }
   
-  li {
+ #navbar li {
     float: left;
   }
   
-  li a {
+  #navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -18,12 +24,75 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  #navbar li a:hover {
     background-color: #111;
   }
-  body{
-      
+  
+  #rightDiv img{
+    width: 80%; height: 50%;
+    margin: auto;
+    float:right;
+    padding-top: 20px;
   }
-  img{
-    width: 30%; height: 30%;
+  #leftText{
+    float: left;
+    width: 60%;
+    height:200px;
+    margin: auto;
+    padding-top: 20px;
   }
+  #rightDiv{
+    float: right;
+    width: 40%;
+    overflow: hidden;
+    margin: auto;
+  }
+.containerNormal footer{
+position: absolute;
+width: 100%;
+top: 680px;
+bottom: 0;
+text-align: center;
+clear: both;
+
+}
+.containerNormal{
+  height: 700px;
+  margin: auto;
+}
+#knappar{
+  margin: 30px;
+  clear: both;
+  float: right;
+  position: absolute;
+  top: 600px;
+  bottom: 0;
+  right: 20px;  
+}
+#knappar button{
+background: crimson;
+color: black;
+margin: 5px;
+width:150px;
+bottom:0;
+right:0;
+position: relative;
+padding:5px;
+}
+.containerNormal footer p{
+  display: inline;
+}
+#head h1, p{
+  display: inline;
+}
+#head #timer{
+float: right;
+margin: auto;  
+}
+#head{
+  padding-top: 20px;
+}
+.containerDarkMode{
+  background: black;
+  color: aliceblue;
+}

@@ -64,38 +64,60 @@ window.setInterval(function () {
 function start() {
     setFooterDate();
     setValue();
+    onLoad();
 }
 function setFooterDate() {
-        document.getElementById("footerText").innerHTML = "| senast uppdaterad: 08/11/2019"
-    
+    document.getElementById("footerText").innerHTML = "| senast uppdaterad: 15/11/2019"
+
 
 }
+var enabled;
 
-function setColor() {
-    if (document.body.style.color != "white") {
-        document.body.style.background = "black";
-        document.body.style.color = "white";
+function onLoad() {
+    if (localStorage.getItem('enabled') === null) {
+        localStorage.setItem('enabled', "false");
+        enabled = localStorage.getItem('enabled');
+        setClassOnLoad();
+    }
+
+    else {
+        enabled = localStorage.getItem('enabled');
+        setClassOnLoad();
+    }
+}
+
+
+function setClassOnLoad() {
+    if (enabled === "true") {
+        document.getElementById("containerClass").className = "containerDarkMode";
+        document.getElementById("nightModeBtn").innerHTML = "Night Mode (enabled)";
+        document.getElementById("footerClass").className = "darkModeFooter";
+
     }
     else {
-        document.body.style.color = "black";
-        document.body.style.background="radial-gradient(circle, rgba(174, 238, 187, 1) 0%, rgba(148, 187, 233, 1) 100%)";
+        document.getElementById("containerClass").className = "containerNormal";
+        document.getElementById("nightModeBtn").innerHTML = "Night Mode (disabled)";
+        document.getElementById("footerClass").className = "normalModeFooter";
+
+
     }
 }
 
-function darkMode(){
-    if(localStorage.getItem('enabled')===null)
-    {
-        localStorage.setItem('enabled',false)
-    }
-    var enabled = localStorage.getItem('enabled');
+function setClass() {
+    if (enabled === "true") {
+        document.getElementById("containerClass").className = "containerNormal";
+        localStorage.setItem('enabled', "false");
+        enabled = localStorage.getItem('enabled');
+        document.getElementById("nightModeBtn").innerHTML = "Night Mode (disabled)";
+        document.getElementById("footerClass").className = "normalModeFooter";
 
-    if(enabled===false){
-        document.getElementById("containerClass").className="containerDarkMode";
-        localStorage.setItem('enabled',true);
-    }
-    else{
-        document.getElementById("containerClass").className="containerNormal";
-        localStorage.setItem('enabled',false);
-    }
 
+    }
+    else {
+        document.getElementById("containerClass").className = "containerDarkMode";
+        localStorage.setItem('enabled', "true");
+        enabled = localStorage.getItem('enabled');
+        document.getElementById("nightModeBtn").innerHTML = "Night Mode (enabled)";
+        document.getElementById("footerClass").className = "darkModeFooter";
+    }
 }

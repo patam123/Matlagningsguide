@@ -6,12 +6,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
+    <link rel="icon" href="favicon.png">
 </head>
 
 <body onload="start()">
     <div id="containerClass">
         <div id="head">
             <h1>Allt du behöver veta för att bli en mästerkock</h1>
+            <button id="nightModeBtn" onclick="setClass()">Night Mode</button>
             <p id="timer"></p>
         </div>
         <nav id="navbar">
@@ -37,13 +39,13 @@
         <div id="knappar"> <a href="Tips.html"><button>Föregående sida</button></a>
             <a href="Kommaigång.html"><button>Nästa sida</button></a>
         </div>
-        <footer>
+    </div>
+        <footer id="footerClass">
             <p>Martin Göransson & Patrik Hammarstrand</p>
             <p id="footerText"></p>
         </footer>
-        <button onclick="darkMode()">Night Mode</button>
+        
 
-    </div>
 
 
 </body>

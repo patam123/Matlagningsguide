@@ -1,98 +1,182 @@
-
-body{
-      padding-left:40px;
-      padding-right:40px;
-      height: 700px;
+html{
+  background-image: url("template.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  display: block;
+  overflow-x: hidden;
 }
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
- #navbar li {
-    float: left;
-  }
-  
-  #navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  #navbar li a:hover {
-    background-color: #111;
-  }
-  
-  #rightDiv img{
-    width: 80%; height: 50%;
-    margin: auto;
-    float:right;
-    padding-top: 20px;
-  }
-  #leftText{
-    float: left;
-    width: 60%;
-    height:200px;
-    margin: auto;
-    padding-top: 20px;
-  }
-  #rightDiv{
-    float: right;
-    width: 40%;
-    overflow: hidden;
-    margin: auto;
-  }
-.containerNormal footer{
-position: absolute;
-width: 100%;
-top: 680px;
-bottom: 0;
-text-align: center;
-clear: both;
 
-}
-.containerNormal{
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
   height: 700px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+}
+
+#rightDiv img {
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+#leftText {
+  float: left;
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#rightDiv {
+  float: right;
+  width: 40%;
+  overflow: hidden;
   margin: auto;
 }
-#knappar{
+
+
+.containerNormal {
+  height: 700px;
+  margin: auto;
+  background-color: white;
+}
+
+#knappar {
   margin: 30px;
   clear: both;
   float: right;
   position: absolute;
   top: 600px;
   bottom: 0;
-  right: 20px;  
+  right: 20px;
 }
-#knappar button{
-background: crimson;
-color: black;
-margin: 5px;
-width:150px;
-bottom:0;
-right:0;
-position: relative;
-padding:5px;
+
+#knappar button {
+  background: crimson;
+  color: black;
+  margin: 5px;
+  width: 150px;
+  bottom: 0;
+  right: 60px;
+  position: relative;
+  padding: 5px;
 }
-.containerNormal footer p{
+
+#head h1, p {
   display: inline;
 }
-#head h1, p{
-  display: inline;
+#head h1{
+  margin-left: 10px;
 }
-#head #timer{
-float: right;
-margin: auto;  
+
+#head #timer {
+  float: right;
+  margin: auto;
+  padding: 3px;
+  animation: timerAnimation 5s infinite;
+  border-radius: 10px;
+  width: 60px;
+  text-align: center;
 }
-#head{
+@keyframes timerAnimation{
+  0%{
+    background-color: burlywood;
+  }
+  20%{
+    background-color:   olive;
+  }
+  40%{
+    background-color: palegreen;
+  }
+  60%{
+    background-color: plum;
+  }
+  80%{
+    background-color: salmon;
+  }
+  100%{
+    background-color: chocolate;
+  }
+}
+
+#head {
   padding-top: 20px;
 }
-.containerDarkMode{
+
+.containerDarkMode {
   background: black;
   color: aliceblue;
+  height: 700px;
+  margin: auto;
+}
+
+.containerNormal #nightModeBtn{
+  border-radius: 5px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.containerNormal #nightModeBtn:hover{
+  background-color: black;
+  color: white;
+}
+.containerDarkMode #nightModeBtn{
+  border-radius: 5px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.containerDarkMode #nightModeBtn:hover{
+background-color: lightslategray;
+color: black;
+}
+#nightModeBtn:focus{
+  outline: none;
+}
+footer{
+  text-align: center;
+  color: black;
+
+}
+.normalModeFooter{
+  background-color: white;
+  color:black;
+}
+.darkModeFooter{
+  background-color: black;
+  color: white;
 }

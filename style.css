@@ -17,30 +17,23 @@ body {
   height: 700px;
 }
 
-#navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-#navbar li {
+#leftText {
   float: left;
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
-#navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+#rightDiv {
+  float: right;
+  width: 40%;
+  overflow: hidden;
+  margin: auto;
+  box-sizing: border-box;
 }
-
-#navbar li a:hover {
-  background-color: #111;
-}
-
 #rightDiv img {
   width: 80%;
   height: 50%;
@@ -50,91 +43,11 @@ body {
   padding-right: 20px;
 }
 
-#leftText {
-  float: left;
-  width: 50%;
-  height: 200px;
-  margin: auto;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
-#rightDiv {
-  float: right;
-  width: 40%;
-  overflow: hidden;
-  margin: auto;
-}
-
-
 .containerNormal {
   height: 700px;
   margin: auto;
   background-color: white;
 }
-
-#knappar {
-  margin: 30px;
-  clear: both;
-  float: right;
-  position: absolute;
-  top: 600px;
-  bottom: 0;
-  right: 20px;
-}
-
-#knappar button {
-  background: crimson;
-  color: black;
-  margin: 5px;
-  width: 150px;
-  bottom: 0;
-  right: 60px;
-  position: relative;
-  padding: 5px;
-}
-
-#head h1, p {
-  display: inline;
-}
-#head h1{
-  margin-left: 10px;
-}
-
-#head #timer {
-  float: right;
-  margin: auto;
-  padding: 3px;
-  animation: timerAnimation 5s infinite;
-  border-radius: 10px;
-  width: 60px;
-  text-align: center;
-}
-@keyframes timerAnimation{
-  0%{
-    background-color: burlywood;
-  }
-  20%{
-    background-color:   olive;
-  }
-  40%{
-    background-color: palegreen;
-  }
-  60%{
-    background-color: plum;
-  }
-  80%{
-    background-color: salmon;
-  }
-  100%{
-    background-color: chocolate;
-  }
-}
-
-#head {
-  padding-top: 20px;
-}
-
 .containerDarkMode {
   background: black;
   color: aliceblue;
@@ -167,6 +80,52 @@ color: black;
 #nightModeBtn:focus{
   outline: none;
 }
+#head h1, p {
+  display: inline;
+}
+#head h1{
+  margin-left: 10px;
+}
+
+#head #timer {
+  float: right;
+  margin: auto;
+  padding: 3px;
+  animation: timerAnimation 5s infinite;
+  border-radius: 10px;
+  width: 60px;
+  text-align: center;
+}
+
+#head {
+  padding-top: 20px;
+}
+
+#knappar {
+  margin: 30px;
+  clear: both;
+  float: right;
+  position: absolute;
+  top: 600px;
+  bottom: 0;
+  right: 20px;
+}
+
+#knappar button {
+  background: #333;
+  color: white;
+  margin: 5px;
+  width: 150px;
+  bottom: 0;
+  right: 60px;
+  position: relative;
+  padding: 5px;
+}
+#knappar button:hover{
+  background-color: black;
+  color: white;
+}
+
 footer{
   text-align: center;
   color: black;
@@ -179,4 +138,47 @@ footer{
 .darkModeFooter{
   background-color: black;
   color: white;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+}
+@keyframes timerAnimation{
+  0%{
+    background-color: burlywood;
+  }
+  20%{
+    background-color:   olive;
+  }
+  40%{
+    background-color: palegreen;
+  }
+  60%{
+    background-color: plum;
+  }
+  80%{
+    background-color: salmon;
+  }
+  100%{
+    background-color: chocolate;
+  }
 }

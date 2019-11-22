@@ -67,7 +67,7 @@ function start() {
     onLoad();
 }
 function setFooterDate() {
-    document.getElementById("footerText").innerHTML = "| senast uppdaterad: 15/11/2019"
+    document.getElementById("footerText").innerHTML = "| senast uppdaterad: 22/11/2019"
 
 
 }

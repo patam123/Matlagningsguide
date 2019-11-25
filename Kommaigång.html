@@ -2,52 +2,62 @@
 <html>
 
 <head>
+    <title>Matlagningsguiden</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
-
+    <link rel="icon" href="favicon.png">
 </head>
 
 <body onload="start()">
-        <div id="containerClass">
-            <div id="head">
-                <h1>Allt du behöver veta för att bli en mästerkock</h1>
-                <p id="timer"></p>
-            </div>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="Index.html">Start</a></li>
-                    <li><a href="Kommaigång.html">Komma igång</a></li>
-                    <li><a href="Stegförsteg.html">Laga din första rätt</a></li>
-                    <li><a href="Tips.html">Tips och trix för att bli en mästare i köket</a></li>
-                </ul>
-            </nav>
-            <div id="leftText">
-                <p>Matlagning är något som berör alla, men alla är på olika nivåer i sin matlagningskunskap.
-                    Här kommer vi att gå igenom de grundläggande koncepten för att bli en matlagare av rang.
-                    Du kanske vill lära dig laga mat för att imponera på dejten?
-                    Eller för att förgylla din vardag?
-                    Vi lär dig alla tips, knep och grundläggande koncept som behövs.
-                </p>
-            </div>
-            <div id="rightDiv">
-                <img src="kitchen.jpg" alt="Kök">
-            </div>
-    
-            <div id="knappar"> <a href="Index.html"><button>Föregående sida</button></a>
-                <a href="Stegförsteg.html"><button>Nästa sida</button></a>
-            </div>
-            <footer>
-                <p>Martin Göransson & Patrik Hammarstrand</p>
-                <p id="footerText"></p>
-            </footer>
-    
+    <div id="containerClass">
+        <div id="head">
+            <h1>Allt du behöver veta för att bli en mästerkock</h1>
+            <button id="nightModeBtn" onclick="setClass()">Night Mode</button>
+            <p id="timer"></p>
         </div>
-    
-    
-    </body>
+        <nav id="navbar">
+            <ul>
+                <li><a href="Index.html">Start</a></li>
+                <li><a href="Kommaigång.html">Komma igång</a></li>
+                <li><a href="Stegförsteg.html">Laga din första rätt</a></li>
+                <li><a href="Tips.html">Tips och trix för att bli en mästare i köket</a></li>
+            </ul>
+        </nav>
+        <div id="leftText">
+            <p>För att börja laga mat behöver du ett kök. <br><br>
+                Här kommer en lista på grundläggande föremål du behöver i ditt kök:
+                <ul>
+                    <li>Spis</li>
+                    <li>Kastruller</li>
+                    <li>Stekpannor</li>
+                    <li>Knivar</li>
+                    <li>Föremål för att förflytta mat</li>
+
+                </ul>
+                Ifall du saknar ett kök, åk till IKEA och fråga personalen vad du behöver i ett kök. <br> 
+                Eller klicka på bilden: <br> 
+                <a id="getStarted" href="https://www.ikea.com/se/sv/rooms/kitchen/" target="_blank"><img id="ikeaLogo" src="ikea.png" alt="ikealogo"></a>
+            </p>
+        </div>
+        <div id="rightDiv">
+            <img src="kitchen.jpg" alt="Kök">
+        </div>
+        <div id="knappar"> <a href="Index.html"><button>Föregående sida</button></a>
+            <a href="Stegförsteg.html"><button>Nästa sida</button></a>
+        </div>
+    </div>
+        <footer id="footerClass">
+            <p>Martin Göransson & Patrik Hammarstrand</p>
+            <p id="footerText"></p>
+            <button id="fontButton" onclick="setFontStyle()">Byt textstil</button>
+
+        </footer>
+        
 
 
+
+</body>
 
 
 </html>

@@ -1,5 +1,1 @@
-Sätta färgen i diven.
-
-Skapa en tabell för ingredienser.
-
-Fylla innehållet på de olika sidorna.
+Kommentera koden.

@@ -211,17 +211,11 @@ td, th {
   border-radius:25px;
   font-size: 14px;
 }
-#getStarted{
-
-}
 #getStarted:visited{
   color: inherit
 }
 #getStarted:hover{
   color: hotpink;
-}
-#getStarted:active{
-
 }
 #ikeaLogo{
   width: 100%;
